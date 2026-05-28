@@ -19,7 +19,6 @@ public class RevertPaymentServlet extends HttpServlet {
         String courseId = request.getParameter("courseId");
 
         String paymentPath = getServletContext().getRealPath("/WEB-INF/payment.txt");
-        String paidCoursesPath = getServletContext().getRealPath("/WEB-INF/paid_courses.txt");
 
         List<Payment> payments = PaymentFileUtil.readPayments(paymentPath);
         boolean removed = payments.removeIf(p -> p.getUsername().equals(username) && p.getCourseId().equals(courseId));

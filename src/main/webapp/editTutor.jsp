@@ -60,7 +60,7 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="adminDashboard.jsp">
+        <a class="navbar-brand" href="AdminDashboardServlet">
             <i class="fas fa-chalkboard-teacher me-2"></i>MetaTutor Admin
         </a>
         <div class="ms-auto">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col-12">
                     <label class="form-label">Current Profile Image:</label><br>
-                    <img src="image/<%= tutor.getProfileImage() %>" width="100" class="rounded current-image">
+                    <img src="images/<%= tutor.getProfileImage() %>" width="100" class="rounded current-image">
                 </div>
                 <div class="col-12">
                     <label for="profileImage" class="form-label">Upload New Profile Image (optional)</label>

@@ -229,7 +229,7 @@
                             <div class="position-relative me-4">
                                 <div class="profile-avatar-edit">
                                     <% if (tutor.getProfileImage() != null && !tutor.getProfileImage().isEmpty()) { %>
-                                    <img src="image/<%= tutor.getProfileImage() %>" id="profileImagePreview"
+                                    <img src="images/<%= tutor.getProfileImage() %>" id="profileImagePreview"
                                          class="rounded-circle shadow" width="120" height="120"
                                          style="object-fit: cover; border: 3px solid white;">
                                     <% } else { %>

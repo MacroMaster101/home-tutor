@@ -11,11 +11,13 @@ out/
 *.jar
 target/
 build/
+.smarttomcat/
 
 # === Logs and temporary files ===
 *.log
 *.tmp
 *.bak
+logs/
 
 # === OS generated files ===
 .DS_Store
@@ -23,4 +25,5 @@ Thumbs.db
 
 # === Other ===
 *.swp
-.smarttomcat
+.env
+.github/modernize/

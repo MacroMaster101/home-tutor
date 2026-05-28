@@ -99,7 +99,7 @@ public class CourseManagementServlet extends HttpServlet {
                         String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
                         Payment payment = new Payment(username, courseId, courseName, method, amount, date, "Paid");
-                        String path = getServletContext().getRealPath("/WEB-INF/payments.txt");
+                        String path = getServletContext().getRealPath("/WEB-INF/payment.txt");
                         PaymentFileUtil.savePayment(payment, path);
 
                         response.sendRedirect("enrollmentManagement.jsp?status=marked");
@@ -168,7 +168,7 @@ public class CourseManagementServlet extends HttpServlet {
 
             request.setAttribute("course", course);
             request.setAttribute("enrollments", courseEnrollments);
-            request.getRequestDispatcher("/courseEnrollments.jsp").forward(request, response);
+            request.getRequestDispatcher("/enrollmentManagement.jsp").forward(request, response);
         } else {
             request.getSession().setAttribute("error", "Course not found with ID: " + courseId);
             response.sendRedirect("CourseManagementServlet?action=viewCourses");
@@ -318,7 +318,7 @@ public class CourseManagementServlet extends HttpServlet {
                 String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
                 Payment payment = new Payment(studentUsername, courseId, courseName, method, amount, date, "Paid");
-                String paymentPath = getServletContext().getRealPath("/WEB-INF/payments.txt");
+                String paymentPath = getServletContext().getRealPath("/WEB-INF/payment.txt");
                 PaymentFileUtil.savePayment(payment, paymentPath);
             }
         } else {

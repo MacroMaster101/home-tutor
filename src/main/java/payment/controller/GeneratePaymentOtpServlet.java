@@ -1,9 +1,12 @@
 package payment.controller;
 
+import student.model.Student;
+import student.utils.StudentFileUtil;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-import java.io.*;
+import java.io.IOException;
 import java.util.Random;
 
 @WebServlet("/GeneratePaymentOtpServlet")
@@ -23,27 +26,16 @@ public class GeneratePaymentOtpServlet extends HttpServlet {
 
         // Get entered card details (dummy usage; not stored permanently)
         String cardNumber = request.getParameter("cardNumber");
-        String cardName = request.getParameter("cardName");
-        String expiry = request.getParameter("expiry");
-        String cvv = request.getParameter("cvv");
-
-        // Read the student's phone number from student.txt
+        // Read the student's phone number from students.txt
         // (needed to simulate where OTP would be sent)
-        String studentPath = getServletContext().getRealPath("/WEB-INF/student.txt");
+        String studentPath = getServletContext().getRealPath("/WEB-INF/students.txt");
         String phoneNumber = "";
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(studentPath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] parts = line.split("\\|");
-                // Check if line belongs to the logged-in student
-                if (parts.length >= 5 && parts[0].equals(username)) {
-                    phoneNumber = parts[4];  // Index 4 = phone number (adjust if needed)
-                    break;
-                }
+        for (Student student : StudentFileUtil.readStudents(studentPath)) {
+            if (username != null && username.equals(student.getUserName())) {
+                phoneNumber = student.getPhone();
+                break;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
         // Generate a random 4-digit OTP (between 1000 and 9999)
@@ -55,7 +47,11 @@ public class GeneratePaymentOtpServlet extends HttpServlet {
         session.setAttribute("paymentMethod", method);            // Store the selected payment method
 
         // Save a masked version of the card number to show on confirmation screen
-        session.setAttribute("maskedCard", "**** **** **** " + cardNumber.substring(cardNumber.length() - 4));
+        if (cardNumber != null && cardNumber.length() >= 4) {
+            session.setAttribute("maskedCard", "**** **** **** " + cardNumber.substring(cardNumber.length() - 4));
+        } else {
+            session.setAttribute("maskedCard", "selected card");
+        }
 
         // Simulate sending the OTP by printing it to the server console
         System.out.println("[OTP for payment - " + username + "]: " + otp + " sent to phone " + phoneNumber);

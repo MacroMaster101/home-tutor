@@ -86,7 +86,7 @@
             </div>
             <ul class="nav flex-column px-3">
                 <li class="nav-item">
-                    <a class="nav-link active" href="adminDashboard.jsp">
+                    <a class="nav-link text-white active" href="AdminDashboardServlet">
                         <i class="fas fa-tachometer-alt"></i> Dashboard
                     </a>
                 </li>
@@ -96,22 +96,27 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="TutorManagementServlet?action=viewTutors">
+                    <a class="nav-link text-white" href="TutorManagementServlet?action=viewTutors">
                         <i class="fas fa-chalkboard-teacher"></i> Tutors
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="courseManagement.jsp">
+                    <a class="nav-link text-white" href="CourseManagementServlet?action=viewCourses">
                         <i class="fas fa-book"></i> Courses
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="adminPayments.jsp">
-                        <i class="fas fa-book"></i> Payment
+                    <a class="nav-link text-white" href="CourseManagementServlet?action=viewEnrollments">
+                        <i class="fas fa-clipboard-list"></i> Enrollments
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.jsp">
+                    <a class="nav-link text-white" href="adminPayments.jsp">
+                        <i class="fas fa-credit-card me-2"></i> Payments
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="logout.jsp">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </li>

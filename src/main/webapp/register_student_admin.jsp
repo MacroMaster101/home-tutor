@@ -48,11 +48,11 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="adminDashboard.jsp">
+    <a class="navbar-brand" href="AdminDashboardServlet">
       <i class="fas fa-chalkboard-teacher me-2"></i>MetaTutor Admin
     </a>
     <div class="ms-auto">
-      <a href="StudentManagement.jsp" class="btn-close btn-close-purple" aria-label="Close"></a>
+      <a href="AdminServlet?action=viewStudents" class="btn-close btn-close-purple" aria-label="Close"></a>
     </div>
   </div>
 </nav>
@@ -101,7 +101,7 @@
           <input type="file" name="image" id="image" class="form-control" accept="image/*">
         </div>
         <div class="col-12 d-flex justify-content-between">
-          <a href="StudentManagement.jsp" class="btn btn-secondary">
+          <a href="AdminServlet?action=viewStudents" class="btn btn-secondary">
             <i class="fas fa-times me-1"></i> Cancel
           </a>
           <button type="submit" class="btn btn-primary">

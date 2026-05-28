@@ -20,7 +20,7 @@ import java.util.List;
 )
 public class RegisterServlet extends HttpServlet {
 
-    private static final String UPLOAD_DIR = "image"; // Directory to save profile images
+    private static final String UPLOAD_DIR = "images"; // Directory to save profile images
 
     // Handle POST request for student registration
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

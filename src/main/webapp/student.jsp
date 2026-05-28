@@ -144,7 +144,7 @@
             <div>
                 <h2 class="fw-bold mb-2">Welcome back, <%= student.getUserName() %></h2>
             </div>
-            <a href="course_home.jsp">
+            <a href="course-home.jsp">
                 <button class="btn btn-primary">
                     <i class="bi bi-plus-lg me-1"></i> New Session
                 </button>

@@ -173,7 +173,7 @@
         <div class="col-lg-5 col-md-6 mb-4">
             <div class="login-card h-100">
                 <div class="card-img-container">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    <img src="images/student_login.png"
                          class="card-img-top" alt="Student learning online">
                 </div>
                 <div class="card-body text-center">
@@ -193,7 +193,7 @@
         <div class="col-lg-5 col-md-6 mb-4">
             <div class="login-card h-100">
                 <div class="card-img-container">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    <img src="images/tutor_login.png"
                          class="card-img-top" alt="Tutor teaching online">
                 </div>
                 <div class="card-body text-center">

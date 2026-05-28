@@ -189,6 +189,9 @@ public class TutorManagementServlet extends HttpServlet {
 
         // Password
         String password = request.getParameter("password");
+        if (password == null || password.trim().isEmpty()) {
+            password = request.getParameter("newPassword");
+        }
         if (password != null && !password.trim().isEmpty()) {
             tutor.setPassword(TutorFileUtil.hashPassword(password));
         }
@@ -197,7 +200,7 @@ public class TutorManagementServlet extends HttpServlet {
         Part imagePart = request.getPart("profileImage");
         if (imagePart != null && imagePart.getSize() > 0) {
             String fileName = Paths.get(imagePart.getSubmittedFileName()).getFileName().toString();
-            String uploadPath = getServletContext().getRealPath("/") + "image";
+            String uploadPath = getServletContext().getRealPath("/") + "images";
 
             File uploadDir = new File(uploadPath);
             if (!uploadDir.exists()) uploadDir.mkdir();
@@ -206,7 +209,7 @@ public class TutorManagementServlet extends HttpServlet {
             imagePart.write(savedFile.getAbsolutePath());
 
             tutor.setProfileImage(fileName);
-        } else {
+        } else if (tutor.getProfileImage() == null || tutor.getProfileImage().trim().isEmpty()) {
             tutor.setProfileImage("default.png");
         }
 

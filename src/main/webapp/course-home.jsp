@@ -242,7 +242,7 @@
             <!-- Course Card -->
             <div class="card course-card h-100">
                 <!-- Course Image -->
-                <img src="image/<%= course.getImage() %>" alt="Course Image" class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;">
+                <img src="images/<%= course.getImage() %>" alt="Course Image" class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;">
 
                 <!-- Course Body -->
                 <div class="card-body">

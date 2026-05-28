@@ -21,7 +21,7 @@ import java.util.List;
 )
 public class EditProfileServlet extends HttpServlet {
 
-    private static final String UPLOAD_DIR = "image"; // Folder to store uploaded profile pictures
+    private static final String UPLOAD_DIR = "images"; // Folder to store uploaded profile pictures
 
     // Handle GET request – display edit profile page
     @Override
@@ -68,17 +68,17 @@ public class EditProfileServlet extends HttpServlet {
             }
         }
 
-        // 4) If a new profile picture is uploaded, delete the old one
-        String oldPicPath = current.getProfilePicPath();
-        if (oldPicPath != null && !oldPicPath.startsWith("https://")) {
-            File oldFile = new File(getServletContext().getRealPath(oldPicPath));
-            if (oldFile.exists()) oldFile.delete();
-        }
-
-        // 5) Handle new profile picture upload (optional)
+        // 4) Handle new profile picture upload (optional)
         Part filePart = request.getPart("profilePic");
         String fileName = filePart.getSubmittedFileName();
         if (fileName != null && !fileName.isEmpty()) {
+            // Delete the old profile picture only when a new one is uploaded
+            String oldPicPath = current.getProfilePicPath();
+            if (oldPicPath != null && !oldPicPath.startsWith("https://")) {
+                File oldFile = new File(getServletContext().getRealPath(oldPicPath));
+                if (oldFile.exists()) oldFile.delete();
+            }
+
             String appPath = getServletContext().getRealPath("");
             File   uploadDir = new File(appPath, UPLOAD_DIR);
             if (!uploadDir.exists()) uploadDir.mkdirs(); // Create folder if it doesn't exist

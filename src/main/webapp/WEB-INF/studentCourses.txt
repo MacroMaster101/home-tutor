@@ -1,2 +1,6 @@
 ashan|C7AD38|OOP|_3be11f60-68cf-4831-bf01-a5c2d36fc06d.jpg|180|5|Yes
 ashan|C123|Intro to Algebra|algebra.jpg|120.00|4|No
+emily_w|C123|Intro to Algebra|algebra.jpg|120.00|4|Yes
+liam_d|C20001|Classical Mechanics|algebra.jpg|150.00|8|Yes
+sophia_b|C20003|Shakespearian Drama|algebra.jpg|160.00|5|No
+daniel_c|C20002|Organic Chemistry basics|algebra.jpg|140.00|6|Yes

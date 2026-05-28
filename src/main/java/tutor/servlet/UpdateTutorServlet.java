@@ -14,6 +14,11 @@ import java.util.List;
 @WebServlet("/UpdateTutorServlet")
 @MultipartConfig
 public class UpdateTutorServlet extends HttpServlet {
+    @Override
+    public void init() throws ServletException {
+        TutorFileUtil.setFilePath(getServletContext().getRealPath("/WEB-INF/tutors.txt"));
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -49,7 +54,7 @@ public class UpdateTutorServlet extends HttpServlet {
         // ✅ Handle optional profile image upload
         Part filePart = request.getPart("profileImage");
         if (filePart != null && filePart.getSize() > 0) {
-            String uploadPath = getServletContext().getRealPath("/") + "image";
+            String uploadPath = getServletContext().getRealPath("/") + "images";
             File uploadDir = new File(uploadPath);
             if (!uploadDir.exists()) uploadDir.mkdirs();
 

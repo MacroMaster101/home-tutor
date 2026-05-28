@@ -129,8 +129,8 @@
                     <i class="fas fa-graduation-cap me-2"></i>MetaTutor
                 </a>
                 <div class="tagline">Your gateway to academic success</div>
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                     alt="Students learning" class="img-fluid rounded">
+                <img src="images/tutor_login.png"
+                     alt="Tutor teaching" class="img-fluid rounded">
             </div>
         </div>
 

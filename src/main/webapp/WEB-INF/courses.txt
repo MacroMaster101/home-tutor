@@ -1,2 +1,5 @@
 C123|T456|John Doe|Mathematics|Intro to Algebra|Learn algebra basics|Beginner|algebra.jpg|120.00|4
 C7AD38|TUT64525|Kaviya|Computer Science|OOP|test|Beginner|_3be11f60-68cf-4831-bf01-a5c2d36fc06d.jpg|180|5
+C20001|TUT10001|Dr. Alice Williams|Physics|Classical Mechanics|Learn Newton's laws and general classical mechanics principles|Intermediate|algebra.jpg|150.00|8
+C20002|TUT10002|Mr. Robert Johnson|Chemistry|Organic Chemistry basics|Introduction to organic compounds, reaction mechanisms, and structures|Intermediate|algebra.jpg|140.00|6
+C20003|TUT10003|Mrs. Sarah Miller|English Literature|Shakespearian Drama|Dive deep into Shakespeare's greatest plays, sonnets, and literary style|Advanced|algebra.jpg|160.00|5

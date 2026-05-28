@@ -48,27 +48,32 @@
             </div>
             <ul class="nav flex-column px-3">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="adminDashboard.jsp">
+                    <a class="nav-link text-white" href="AdminDashboardServlet">
                         <i class="fas fa-tachometer-alt"></i> Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white active" href="StudentManagement.jsp">
+                    <a class="nav-link text-white active" href="AdminServlet?action=viewStudents">
                         <i class="fas fa-users"></i> Students
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="TutorManagementServlet?action=viewTutors">
+                    <a class="nav-link text-white" href="TutorManagementServlet?action=viewTutors">
                         <i class="fas fa-chalkboard-teacher"></i> Tutors
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="courseManagement.jsp">
+                    <a class="nav-link text-white" href="CourseManagementServlet?action=viewCourses">
                         <i class="fas fa-book"></i> Courses
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white active" href="adminPayments.jsp">
+                    <a class="nav-link text-white" href="CourseManagementServlet?action=viewEnrollments">
+                        <i class="fas fa-clipboard-list"></i> Enrollments
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="adminPayments.jsp">
                         <i class="fas fa-credit-card me-2"></i> Payments
                     </a>
                 </li>

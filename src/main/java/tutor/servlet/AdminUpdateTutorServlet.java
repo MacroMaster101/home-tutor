@@ -46,7 +46,7 @@ public class AdminUpdateTutorServlet extends HttpServlet {
                 Part imagePart = request.getPart("profileImage");
                 if (imagePart != null && imagePart.getSize() > 0) {
                     String imageName = tutorId + "_" + imagePart.getSubmittedFileName();
-                    String imageSavePath = getServletContext().getRealPath("/image") + File.separator + imageName;
+                    String imageSavePath = getServletContext().getRealPath("/images") + File.separator + imageName;
                     imagePart.write(imageSavePath);
                     tutor.setProfileImage(imageName);
                 }

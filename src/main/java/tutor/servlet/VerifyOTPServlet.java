@@ -9,6 +9,11 @@ import java.io.IOException;
 
 @WebServlet("/VerifyOTPServlet")
 public class VerifyOTPServlet extends HttpServlet {
+    @Override
+    public void init() throws ServletException {
+        TutorFileUtil.setFilePath(getServletContext().getRealPath("/WEB-INF/tutors.txt"));
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();

@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("userType", "admin");
             session.setAttribute("username", username);
             session.setAttribute("fullName", "Administrator");
-            response.sendRedirect(request.getContextPath() + "/adminDashboard.jsp");
+            response.sendRedirect(request.getContextPath() + "/AdminDashboardServlet");
             return;
         }
 

@@ -46,7 +46,7 @@ public class RegisterTutorServlet extends HttpServlet {
         Part filePart = request.getPart("profileImage");
         String fileName = null;
         if (filePart != null && filePart.getSize() > 0) {
-            String uploadPath = getServletContext().getRealPath("/") + "image";
+            String uploadPath = getServletContext().getRealPath("/") + "images";
             File uploadDir = new File(uploadPath);
             if (!uploadDir.exists()) uploadDir.mkdirs();
 

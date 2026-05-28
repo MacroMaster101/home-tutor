@@ -18,7 +18,6 @@
     </style>
 </head>
 <body>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:if test="${not empty sessionScope.error}">
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
             ${sessionScope.error}
@@ -44,12 +43,12 @@
             </div>
             <ul class="nav flex-column px-3">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="adminDashboard.jsp">
+                    <a class="nav-link text-white" href="AdminDashboardServlet">
                         <i class="fas fa-tachometer-alt"></i> Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="StudentManagement.jsp">
+                    <a class="nav-link text-white" href="AdminServlet?action=viewStudents">
                         <i class="fas fa-users"></i> Students
                     </a>
                 </li>
@@ -69,7 +68,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white active" href="adminPayments.jsp">
+                    <a class="nav-link text-white" href="adminPayments.jsp">
                         <i class="fas fa-credit-card me-2"></i> Payments
                     </a>
                 </li>
@@ -152,7 +151,7 @@
                                                title="Edit">
                                                 <i class="fas fa-edit"></i>
                                             </a>
-                                            <a href="CourseManagementServlet?action=viewEnrollments${course.courseId}"
+                                            <a href="CourseManagementServlet?action=viewCourseEnrollments&id=${course.courseId}"
                                                class="btn btn-sm btn-outline-info action-btn"
                                                title="View Enrollments">
                                                 <i class="fas fa-users"></i>

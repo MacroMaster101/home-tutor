@@ -243,7 +243,7 @@
         <div class="profile-header d-flex align-items-center">
             <div class="profile-avatar-container">
                 <% if (tutor.getProfileImage() != null && !tutor.getProfileImage().isEmpty()) { %>
-                <img src="image/<%= tutor.getProfileImage() %>" alt="Profile Picture" class="profile-avatar">
+                <img src="images/<%= tutor.getProfileImage() %>" alt="Profile Picture" class="profile-avatar">
                 <% } else { %>
                 <div class="avatar-placeholder">
                     <i class="fas fa-user-tie"></i>

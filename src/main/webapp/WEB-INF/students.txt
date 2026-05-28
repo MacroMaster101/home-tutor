@@ -1,6 +1,10 @@
-STU6175;admin;ashan;abc@gmail.com;0701234567;sliit;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Computer Science;2025-05-21;image/1747578840546_ashan.jpg
-STU3865;null;null;null;null;null;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;uploads/1746890554377_kcs.png
-STU5610;admin;kcs2;abc@gmail.cok;0701234567;sliit;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;uploads/student_1746890649123_kcs2.jpg
-STU4661;null;null;null;null;null;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;uploads/student_1746939844451_ashantr.jpg
-STU1170;null;null;null;null;null;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;uploads/student_1746940692921_ashantrtr.png
-STU6477;admin;ashan1;abc@gmail.cok;0701234567;sliit;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Computer Science;2025-05-21;uploads/1746942548457_ashan1.jpg
+STU6175;admin;ashan;abc@gmail.com;0701234567;sliit;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Computer Science;2025-05-21;images/1747578840546_ashan.jpg
+STU3865;null;null;null;null;null;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;images/1746890554377_kcs.png
+STU5610;admin;kcs2;abc@gmail.cok;0701234567;sliit;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;images/student_1746890649123_kcs2.jpg
+STU4661;null;null;null;null;null;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;images/student_1746939844451_ashantr.jpg
+STU1170;null;null;null;null;null;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;null;null;images/student_1746940692921_ashantrtr.png
+STU6477;admin;ashan1;abc@gmail.cok;0701234567;sliit;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Computer Science;2025-05-21;images/1746942548457_ashan1.jpg
+STU20001;Emily Watson;emily_w;emily.w@example.com;0765432109;12 Main St, Malabe;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Mathematics;2003-08-14;default.png
+STU20002;Liam Davies;liam_d;liam.d@example.com;0751234567;88 Hill Road, Kandy;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Physics;2004-02-28;default.png
+STU20003;Sophia Brown;sophia_b;sophia.b@example.com;0779876543;45 Galle Road, Colombo;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;English Literature;2002-11-05;default.png
+STU20004;Daniel Connor;daniel_c;daniel.c@example.com;0712223334;12 High Street, Galle;03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4;Chemistry;2003-05-19;default.png

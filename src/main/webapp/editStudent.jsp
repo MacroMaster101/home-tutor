@@ -52,7 +52,7 @@
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="adminDashboard.jsp">
+        <a class="navbar-brand" href="AdminDashboardServlet">
             <i class="fas fa-chalkboard-teacher me-2"></i>MetaTutor Admin
         </a>
         <div class="ms-auto">

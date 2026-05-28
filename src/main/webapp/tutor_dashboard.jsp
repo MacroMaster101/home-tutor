@@ -317,7 +317,7 @@
                     <div class="dropdown">
                         <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
                             <% if (tutor.getProfileImage() != null && !tutor.getProfileImage().isEmpty()) { %>
-                            <img src="image/<%= tutor.getProfileImage() %>" alt="Profile photo" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                            <img src="images/<%= tutor.getProfileImage() %>" alt="Profile photo" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
                             <% } else { %>
                             <img src="https://i.pravatar.cc/40?img=5" alt="Profile photo" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
                             <% } %>

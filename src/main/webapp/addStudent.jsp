@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a href="StudentManagement.jsp" class="btn btn-secondary me-md-2">Cancel</a>
+                    <a href="AdminServlet?action=viewStudents" class="btn btn-secondary me-md-2">Cancel</a>
                     <button type="submit" class="btn btn-primary">Add Student</button>
                 </div>
             </form>

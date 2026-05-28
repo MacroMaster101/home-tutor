@@ -1,1 +1,4 @@
 ashan|C7AD38|OOP|card|180|2025-05-18|Success
+emily_w|C123|Intro to Algebra|card|120|2025-05-20|Success
+liam_d|C20001|Classical Mechanics|bank|150|2025-05-22|Success
+daniel_c|C20002|Organic Chemistry basics|card|140|2025-05-25|Success

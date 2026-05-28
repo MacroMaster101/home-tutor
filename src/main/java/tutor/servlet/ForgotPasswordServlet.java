@@ -18,6 +18,11 @@ import java.util.Random;
 public class ForgotPasswordServlet extends HttpServlet {
 
     @Override
+    public void init() throws ServletException {
+        TutorFileUtil.setFilePath(getServletContext().getRealPath("/WEB-INF/tutors.txt"));
+    }
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
 
