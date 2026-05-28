@@ -10,18 +10,18 @@ The application follows the classic Model-View-Controller (MVC) architectural pa
 
 ```mermaid
 graph TD
-    subgraph Client Layer
+    subgraph "Client Layer"
         Browser["🌐 Web Browser"]
     end
 
-    subgraph Controller Layer
+    subgraph "Controller Layer"
         AdminServ["⚙️ AdminServlet & AdminDashboardServlet"]
         CourseServ["⚙️ CourseManagementServlet"]
         TutorServ["⚙️ TutorManagementServlet"]
         StudentServ["⚙️ StudentServlet & LoginServlet"]
     end
 
-    subgraph Persistence Layer (Flat-File DB)
+    subgraph "Persistence Layer (Flat-File DB)"
         S_File["💾 students.txt (Semicolon Delimited)"]
         T_File["💾 tutors.txt (Comma Delimited)"]
         C_File["💾 courses.txt (Pipe Delimited)"]
